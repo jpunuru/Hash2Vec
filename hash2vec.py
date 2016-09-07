@@ -150,7 +150,7 @@ class Hash2Vec:
          
 
 def similarityEval(h2v):
-    w = raw_input("enter the to get similar words; exit to exit.")
+    w = raw_input("enter a word to get similar words(press exit to exit).")
     w = w.strip()
     while w <> "exit":
         simW = h2v.getSimilar(w)
@@ -163,7 +163,7 @@ def similarityEval(h2v):
                 print("\t%-40s\t\t\t%0.5f" % (item[0],item[1]))
 
             print("-----------------------------\n")
-        w = raw_input("enter the to get similar words; exit to exit.")
+        w = raw_input("enter a word to get similar words(press exit to exit).")
         w = w.strip()
 
 
@@ -175,9 +175,3 @@ if __name__ == '__main__':
         h2v.read('hash2vec.out')
         similarityEval(h2v) 
     
-
-
-
-
-
-
